@@ -2,10 +2,9 @@ package com.thetestingacademy.Practise01;
 
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class SeleniumTest01 {
+public class SeleniumBasics {
 
     @Test
     public void LaunchFireFoxBrowserTest01()

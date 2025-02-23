@@ -1,4 +1,4 @@
-package com.thetestingacademy.TestCasePractise;
+package com.thetestingacademy.VWOtesting;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
