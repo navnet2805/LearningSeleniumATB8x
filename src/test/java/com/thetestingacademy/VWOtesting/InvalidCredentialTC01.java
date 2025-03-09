@@ -4,8 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class InvalidCredentialTC01 {
 
@@ -15,11 +19,18 @@ public class InvalidCredentialTC01 {
         WebDriver webDriver = new EdgeDriver();
         webDriver.manage().window().maximize();
 
+        //open link
         webDriver.get("https://app.vwo.com/");
+        //verify current url
         Assert.assertEquals(webDriver.getCurrentUrl(),"https://app.vwo.com/#/login");
-
+//click on free trial link
         WebElement link_StartFreeTrial = webDriver.findElement(By.linkText("Start a free trial"));
         link_StartFreeTrial.click();
+        
+        //explicit wait
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(2000));
+       // wait.until(ExpectedConditions.textToBePresentInElement(webDriver,"Signup for a full-featured trial"));
+
 
         Thread.sleep(2000);
 
