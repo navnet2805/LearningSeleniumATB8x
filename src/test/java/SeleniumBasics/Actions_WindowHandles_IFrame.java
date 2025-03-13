@@ -15,7 +15,7 @@ import java.util.Set;
 
 public class Actions_WindowHandles_IFrame {
 
-    @Description("Search for the mobiles -> click on the 1st mobile from the link -> navigate to second tab and print the rating")
+    @Description("Search for the oppo mobiles -> click on the 1st mobile from the link -> navigate to second tab and print the rating")
     @Test
     public  void Test01() throws InterruptedException {
         WebDriver driver = new EdgeDriver();
