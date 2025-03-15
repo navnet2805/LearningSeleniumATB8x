@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 public class ActionClasses {
 
     @Test
-    public void Test01() throws InterruptedException {
+    public void Test01() throws InterruptedException
+    {
         WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.get("https://awesomeqa.com/practice.html");
@@ -35,4 +36,5 @@ public class ActionClasses {
 
 
     }
+
 }
