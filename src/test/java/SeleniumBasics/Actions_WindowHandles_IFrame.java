@@ -60,6 +60,7 @@ public class Actions_WindowHandles_IFrame {
                 System.out.println("Rating of the product is: " +rating.getText());
             }
         }
+        driver.switchTo().defaultContent(); //switching to the orginal window handle
         driver.quit();
     }
 
